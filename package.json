@@ -106,8 +106,8 @@
     "test:gql": "mocha ./test/graphql/**/* .test.js",
     "test:contractConsumer": "mocha ./test/contract/loginConsumer.test.js",
     "test:contractProvider": "mocha ./test/contract/loginProvider.test.js",
-    "test:contractProduct": "mocha ./test/contract/productContract.test.js",
-    "test:providerProduct": "mocha ./test/contract/productProvider.test.js"
+    "test:contractProductP": "mocha ./test/contract/productProvider.test.js",
+    "test:contractProductC": "mocha ./test/contract/productConsumer.test.js"
   },
   "keywords": [],
   "author": "Ryan_moraes",
