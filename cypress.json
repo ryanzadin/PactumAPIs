@@ -1,0 +1,10 @@
+{
+    "baseUrl":"http://localhost:4000/",
+    "reporter": "mochawesome",
+  "reporterOptions": {
+    "reporterDir":"mochawesome-report",
+    "overwrite": false,
+    "html": true,
+    "json": true
+  }
+}
