@@ -1,0 +1,27 @@
+name: PactumJs EBAC
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        continue-on-error: true
+        with:
+           install-comand: npm install
+           browser: chrome
+      - name: Plublish report
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+           github_token: ${{ secrets.GITHUB_TOKEN }}
+           publish_dir: ./mochawesome-report
+           
+   
